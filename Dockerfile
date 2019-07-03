@@ -20,7 +20,7 @@ RUN chmod +x /usr/local/bin/* \
  && cd /tmp \
  && wget -q https://github.com/krallin/tini/releases/download/v$TINI_VER/tini_$TINI_VER.rpm \
  && dnf install -y tini_$TINI_VER.rpm \
- && git clone https://github.com/TryItOnline/tiosetup.git /opt/tiosetup \
+ && git clone https://github.com/thisIsTheFoxe/tiosetup.git /opt/tiosetup \
  && cd /opt/tiosetup \
  && cp /opt/tiodocker/config.docker /opt/tiosetup/private/config \
  && /opt/tiosetup/bootstrap \
